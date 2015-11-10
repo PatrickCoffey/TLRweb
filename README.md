@@ -63,8 +63,8 @@ User access and User roles will be assigned to users only once they have been ap
     |   Community2       |  |                                   |  XX                          |
     |   etc...           |  |                                   |   XX                         |
     |--------------------+  |       XX                          |    XXX                       |
-    |--------------------+  |      XXXXX                        |      XXX        XXXX         |
-    |                    |  |     XX   XXXXXXX                  |        XX     XXX  XX        |
+    |                    |  |      XXXXX                        |      XXX        XXXX         |
+    |--------------------+  |     XX   XXXXXXX                  |        XX     XXX  XX        |
     | Community1 Report  |  |    XX     XX   XXX                |         XX   XX     XXX      |
     |--------------------+  |   XX             XXXX             |           XXX         XXXX   |
     |                    |  |  XX                 XXXXXX        |                          XX  |
