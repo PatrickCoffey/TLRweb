@@ -97,9 +97,3 @@ STATICFILES_DIRS = (
 TEMPLATE_DIRS = (
     BASE_DIR,
 )
-
-print(BASE_DIR)
-#print(STATIC_ROOT)
-
-for f in STATICFILES_DIRS:
-    print(f)
