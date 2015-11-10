@@ -2,8 +2,9 @@
 
 ## Background
 This is a basic dashboard written in Python Django. It must have atleast the 
-same functionality as the current traffic light reports with no increase in 
-difficulty to use.
+same functionality as the current Traffic Light Reports with no increase in 
+difficulty to use. Traffic Light Reports are a specific type of Chonic Disease 
+dashboard, they were designed by Dr. Gary Sinclair for the NT DOH.
 
 The coice of using a Django app is very easy as python is a very simple language
 and there is a huge amount of information on the internet regarding how to use.
@@ -43,4 +44,26 @@ end database is intended to be upgraded to something along the lines of MySQL
 or another DBMS of similar qualities.
 
 The intended web server is apache due to the fact that it is a very common web
-server, this should make it a sustainable choice!
+server, this should allow almost anyone to step in and take over administration.
+
+Due to security implications we will not be opening the firewall to allow external
+users to request pages from the webserver. This will be done by limiting the IP
+range of hosts that are allowed to connect.
+
+A CSV will be produced from the Business Intelligence server which will be read
+into the Staging Database by the app. Data will be queried and cleaned before 
+being inserted into the Production database for access by users.
+
+Users will access the database via a sert of pages configures for certain roles,
+there will be roles for all levels of access. No one will have Write access to 
+the server, and most users will only have access to their own Community. HSDA
+groups will be set up in addition, this will be used for Area service managers
+and CQI's alike. There will also be Territory and Region wide reports for the 
+use of GM's etc.
+
+Excel files will be downloadable from the server, this is to ensure that people
+will still have a familiar way to filter the spreadsheets!
+
+## Administration
+User access and User roles will be assigned to users only once they have been 
+approved for access to said functions.
