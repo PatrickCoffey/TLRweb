@@ -3,7 +3,7 @@
 ## Background
 This is a basic dashboard written in Python Django. It must have atleast the same functionality as the current Traffic Light Reports with no increase in difficulty to use. Traffic Light Reports are a specific type of Chonic Disease dashboard, they were designed by Dr. Gary Sinclair for the NT DOH.
 
-The coice of using a Django app is very easy as python is a very simple language and there is a huge amount of information on the internet regarding how to use.
+The choice of using a Django app is very easy as python is a very simple language and there is a huge amount of information on the internet regarding how to use.
 
 The best thing about having this written in python is that as a language python strives to be easy to understand, well documented, mostly backwards compatible; while the community encourage things to be written modularly and the easiest way to understand. Its not like `C` in the sense that performance only takes precedence if the resulting code will still be easily maintainable and understood.
 
@@ -42,7 +42,7 @@ Users will access the database via a set of pages configured for certain roles, 
 
 Excel files will be downloadable from the server, this is to ensure that people will still have a familiar way to filter the spreadsheets!
 
-It is intended that the staging database will be controlled using SQLAlchemy and that it will be very similar to the Django data base which will aid in supporting this application
+It is intended that the staging database will be controlled using SQLAlchemy and that it will be very similar to the Django data base which will aid in supporting this application due to the fact Django actually uses SQLAlchemy to liaise with its own database!
 
 
 
