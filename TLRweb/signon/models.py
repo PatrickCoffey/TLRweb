@@ -1,11 +1,8 @@
 from django.db import models
+from django.contrib.auth.models import User
 
 # Create your models here.
 
 
-class user(models.Model):
-    """This is a user of the web app"""
-    
-    
-    def __unicode__(self):
-        return 
+class user(User):
+    pass

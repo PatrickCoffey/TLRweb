@@ -24,7 +24,7 @@ DEBUG = True
 
 TEMPLATE_DEBUG = True
 
-ALLOWED_HOSTS = []
+#ALLOWED_HOSTS = ['localhost']
 
 
 # Application definition
@@ -83,3 +83,23 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.7/howto/static-files/
 
 STATIC_URL = '/static/'
+
+#STATIC_ROOT = os.path.join(BASE_DIR, "static")
+
+STATICFILES_DIRS = (
+    os.path.join(os.path.join(BASE_DIR, "static")),
+    os.path.join(BASE_DIR, "static", "css"),
+    os.path.join(BASE_DIR, "static", "js"),
+    os.path.join(BASE_DIR, "static", "media")
+)
+
+# Templates
+TEMPLATE_DIRS = (
+    BASE_DIR,
+)
+
+print(BASE_DIR)
+#print(STATIC_ROOT)
+
+for f in STATICFILES_DIRS:
+    print(f)
