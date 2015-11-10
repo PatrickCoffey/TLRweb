@@ -50,6 +50,8 @@ It is intended that the staging database will be controlled using SQLAlchemy and
 User access and User roles will be assigned to users only once they have been approved for access to said functions.
 
 
+## Example
+
     +------------------------------------------------------------------------------------------+
     | DOH   Traffic Light Report                                               FEEDBACK  HELP  |
     |--------------------+---------------------------------------------------------------------|
