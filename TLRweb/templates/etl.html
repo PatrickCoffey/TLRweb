@@ -1,0 +1,13 @@
+{% extends "templates/base.html" %}
+
+{% block title %}TLR ETL Load{% endblock %}
+
+{% block page_heading %} TLR ETL Load {% endblock %}
+
+{% block content %}
+    <form class="form-horizontal" action="/etl/" method="post">
+        {% csrf_token %}
+        {{ form }}
+        <input class="btn btn-primary" type="submit" value="Submit" />
+    </form>
+{% endblock %}

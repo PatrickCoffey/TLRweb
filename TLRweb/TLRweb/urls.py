@@ -13,4 +13,6 @@ urlpatterns = patterns('',
     url(r'^$', 'TLRweb.views.home', name='home'),
     
     url(r'^admin/', include(admin.site.urls)),
+    url(r'^etl/', 'TLR_ETL.views.etl', name='etl'),
+    url(r'^etl_load/', 'TLR_ETL.views.etl_load', name='etl_load')
 )
