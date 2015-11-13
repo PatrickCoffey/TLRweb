@@ -20,8 +20,8 @@ class CommunityAliases(models.Model):
     
     def __unicode__(self):
         return '%s' % self.alias    
-    
-    
+
+
 class Client(models.Model):
     
     GENDER_CHOICE = (('m', 'Male'),('f', 'Female'), ('u', 'Unknown'), ('o', 'Other'))

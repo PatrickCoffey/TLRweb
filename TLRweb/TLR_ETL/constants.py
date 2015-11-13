@@ -2,7 +2,9 @@
 
 __BASEDIR__ = 'C:/temp/'
 
-DB = DATABASES['default']['NAME']
+DB = 'default'
+
+db_prefix = 'TLR_ETL_'
 
 QUERY_ORDER = {0: 'population',
                1: 'pcd',
