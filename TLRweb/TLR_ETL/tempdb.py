@@ -47,7 +47,7 @@ def dictfetchall(cursor):
     return [dict(zip([col[0] for col in desc], row))
             for row in cursor.fetchall()]
 
-def updateTempDB(data):
+def updateDB(data):
     """Pushes data to the temp database. AKA Staging DB"""
     try:
         set_autocommit(False, constants.DB)
