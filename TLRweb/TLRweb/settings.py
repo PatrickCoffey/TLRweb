@@ -62,8 +62,14 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
+    },
+    'etl': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'etl.sqlite3'),
+    }    
 }
+
+DATABASE_ROUTERS = ['TLR_ETL.etl-router.ETLRouter']
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.7/topics/i18n/

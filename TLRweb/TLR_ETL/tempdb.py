@@ -157,6 +157,19 @@ def _pushToProd():
     for key in CSVMap.iterkeys():
         tablename = getTNfromCSV(key)
 
+def _do_etl(request, csvfile):
+    testData = parseCSV(csvfile)
+    updateDB(testData)
+    print(execQuery('''SELECT 
+        result_component, 
+        HRN, 
+        Result_Measure, 
+        Usual_Clinic_Name, 
+        Result_Desc, 
+        RANK_Result_Date_DESC, 
+        Result_Date 
+    FROM DjangoTLR_csvSysBP''', None, constants.DB))    
+
 if __name__ == '__main__':
     sTime = time.time()
     csvfile = 'C:/Users/Pat12/Documents/Reports/TLR+V8.3+test.csv'

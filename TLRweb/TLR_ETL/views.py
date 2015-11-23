@@ -3,7 +3,8 @@ from django.template import loader, RequestContext
 from django.http import HttpResponse, HttpResponseRedirect
 from django.contrib import messages
 
-from .forms import etl_form
+from TLR_ETL.forms import etl_form
+from TLR_ETL.tempdb import _do_etl
 
 import time
 
@@ -16,8 +17,9 @@ def etl(request):
         form = etl_form(request.POST)
         # check whether it's valid:
         if form.is_valid():
-            messages.info(request, "Please wait while your data is processed!")
+            #messages.info(request, "Please wait while your data is processed!")
             messages.info(request, "Reading data from " + request.POST.get('csv_file'))
+            _do_etl(request, request.POST.get('csv_file'))
     # if a GET (or any other method) we'll create a blank form
     else:
         form = etl_form()    
